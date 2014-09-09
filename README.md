@@ -6,14 +6,22 @@ _Job IO statistics on Lustre file systems for HPC Clusters_
 A quick and dirty utility to get raw job IO statistics on Lustre file systems. This utility is written in Python.
 
 *How to use:*
+
 Refer to the sample job script on how to use this utility.
 
-External Dependencies:
+*External Dependencies:*
 
 * [python-jsonrpc](https://pypi.python.org/pypi/python-jsonrpc/)
     * [bunch](https://pypi.python.org/pypi/bunch/1.0.1)
 * [tabulate](https://pypi.python.org/pypi/tabulate/0.7.2)
 
+*Site Customizations:*
+
+In `iostats_client.py`, update the following to reflect the file system names at your site
+
+
+`MDCPath = "/proc/fs/lustre/llite/snx1100*"
+OSCPath = "/proc/fs/lustre/osc/snx1100*"`
 
 Sample output
 -------------
