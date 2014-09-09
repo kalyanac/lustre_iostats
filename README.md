@@ -42,4 +42,4 @@ Metadata statistics for this job:
 
 </pre>
 
-This work performed at [NCSA](http://www.ncsa.illinois.edu).
+This work was developed while at [NCSA](http://www.ncsa.illinois.edu).
