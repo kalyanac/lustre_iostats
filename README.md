@@ -1,7 +1,7 @@
 lustre_iostats
 ==============
 
-Job IO statistics on Lustre file systems for HPC Clusters
+>Job IO statistics on Lustre file systems for HPC Clusters
 
 External Dependencies:
 
