@@ -26,7 +26,7 @@ Refer to the sample job script on how to use this utility.
    OSCPath = "/proc/fs/lustre/osc/snx1100*"
    ```
    
-   The server picks a port to listen to based on the job id. The job id format I worked with is <server.jobid>. The jobid is numeric. If your job ID's are not numeric, customize the ```Port``` variable in ```iostats_client.py``` & ```iostats_server.py```
+   The server picks a port to listen to based on the job id. The job id format I worked with is _server.jobid_. The _jobid_ portion is numeric. If your job ID's are not numeric, customize the ```Port``` variable in ```iostats_client.py``` & ```iostats_server.py``` to match your needs. Using _jobid_ is convenient as there will never be a conflict when multiple jobs are using this utility. 
 
 Sample output
 -------------
