@@ -31,13 +31,13 @@ Refer to the sample job script on how to use this utility.
 Sample output
 -------------
 <pre>
-File data transfer statistics for this job:
+
 +---------------+-------------+--------------+
 | File System   | File Read   | File Write   |
 +===============+=============+==============+
-| BW Home       | 320.0 MB    | 32.0 GB      |
+| BW Home       | 320.0 MB    | 0.0 bytes    |
 +---------------+-------------+--------------+
-| BW Scratch    | 0.0 bytes   | 0.0 bytes    |
+| BW Scratch    | 32.0 GB     | 32.0 GB      |
 +---------------+-------------+--------------+
 | BW Projects   | 0.0 bytes   | 0.0 bytes    |
 +---------------+-------------+--------------+
@@ -46,13 +46,13 @@ Metadata statistics for this job:
 +---------------+--------+---------+----------+-------------+---------+-----------+---------+
 | File System   |   open |   close |   create |        seek |   fsync |   getattr |   mkdir |
 +===============+========+=========+==========+=============+=========+===========+=========+
-| BW Home       |    288 |     288 |        0 | 8.38861e+06 |       0 |       576 |       0 |
+| BW Home       |    160 |     160 |        0 | 0           |       0 |       448 |       0 |
 +---------------+--------+---------+----------+-------------+---------+-----------+---------+
-| BW Scratch    |      0 |       0 |        0 | 0           |       0 |         0 |       0 |
+| BW Scratch    |    256 |     256 |        0 | 1.67772e+07 |       0 |       256 |       0 |
 +---------------+--------+---------+----------+-------------+---------+-----------+---------+
 | BW Projects   |      0 |       0 |        0 | 0           |       0 |         0 |       0 |
 +---------------+--------+---------+----------+-------------+---------+-----------+---------+
 
 </pre>
 
-This work was developed while at [NCSA](http://www.ncsa.illinois.edu).
+This work was developed while at [NCSA](http://www.ncsa.illinois.edu). Please provide attribution as needed. 
