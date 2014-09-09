@@ -11,7 +11,7 @@ External Dependencies:
 
 
 Sample output
-=============
+-------------
 <pre>
 File data transfer statistics for this job:
 +---------------+-------------+--------------+
