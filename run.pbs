@@ -1,0 +1,17 @@
+#PBS -l walltime=00:15:00
+#PBS -l nodes=8:ppn=32
+#PBS -V
+#PBS -N cpulist
+cd $PBS_O_WORKDIR
+
+export PYTHONPATH=/u/staff/kalyana/utils/lustre/iostats/mods/bunch-1.0.1:/u/staff/kalyana/utils/lustre/iostats/mods/python-jsonrpc-0.3.4:/u/staff/kalyana/utils/lustre/iostats/code/:/u/staff/kalyana/utils/lustre/iostats/pyjson/tabulate-0.7.2/
+
+aprun -q -n $PBS_NUM_NODES -N 1 /u/staff/kalyana/utils/lustre/iostats/code/iostats_client.py 1 2>/dev/null
+
+aprun -n $PBS_NUM_NODES -N 1  ../ior -a POSIX -w -b 256M -t 4k -k -o myfile
+
+/u/staff/kalyana/utils/lustre/iostats/code/iostats_server.py &
+
+aprun -q -n $PBS_NUM_NODES -N 1 /u/staff/kalyana/utils/lustre/iostats/code/iostats_client.py 2 `hostname` 2>/dev/null
+
+wait
