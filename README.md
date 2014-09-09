@@ -12,7 +12,7 @@ External Dependencies:
 
 Sample output
 =============
-
+<pre>
 File data transfer statistics for this job:
 +---------------+-------------+--------------+
 | File System   | File Read   | File Write   |
@@ -34,3 +34,5 @@ Metadata statistics for this job:
 +---------------+--------+---------+----------+-------------+---------+-----------+---------+
 | BW Projects   |      0 |       0 |        0 | 0           |       0 |         0 |       0 |
 +---------------+--------+---------+----------+-------------+---------+-----------+---------+
+
+</pre>
