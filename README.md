@@ -1,7 +1,12 @@
 lustre_iostats
 ==============
 
->Job IO statistics on Lustre file systems for HPC Clusters
+_Job IO statistics on Lustre file systems for HPC Clusters_
+
+A quick and dirty utility to get raw job IO statistics on Lustre file systems. This utility is written in Python.
+
+*How to use:*
+Refer to the sample job script on how to use this utility.
 
 External Dependencies:
 
@@ -36,3 +41,5 @@ Metadata statistics for this job:
 +---------------+--------+---------+----------+-------------+---------+-----------+---------+
 
 </pre>
+
+This work performed at [NCSA](www.ncsa.illinois.edu), [UIUC](www.illinois.edu).
