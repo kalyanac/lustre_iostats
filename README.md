@@ -17,11 +17,16 @@ Refer to the sample job script on how to use this utility.
 
 *Site Customizations:*
 
-In `iostats_client.py`, update the following to reflect the file system names at your site
+   In ```iostats_client.py```, update the following to reflect the file system names at your site
 
 
-`MDCPath = "/proc/fs/lustre/llite/snx1100*"
-OSCPath = "/proc/fs/lustre/osc/snx1100*"`
+   ```
+   MDCPath = "/proc/fs/lustre/llite/snx1100*"
+   
+   OSCPath = "/proc/fs/lustre/osc/snx1100*"
+   ```
+   
+   The server picks a port to listen to based on the job id. The job id format I worked with is <server.jobid>. The jobid is numeric. If your job ID's are not numeric, customize the ```Port``` variable in ```iostats_client.py``` & ```iostats_server.py```
 
 Sample output
 -------------
