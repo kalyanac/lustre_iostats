@@ -28,6 +28,10 @@ Refer to the sample job script on how to use this utility.
    
    The server picks a port to listen to based on the job id. The job id format I worked with is _server.jobid_. The _jobid_ portion is numeric. If your job ID's are not numeric, customize the ```Port``` variable in ```iostats_client.py``` & ```iostats_server.py``` to match your needs. Using _jobid_ is convenient as there will never be a conflict when multiple jobs are using this utility. 
 
+*Issues*
+
+   Error handling is not extensively tested. Espeically if permissions restrict the script from reading the necessary files in ```/proc```, there maybe issues with the server waiting forever. 
+
 Sample output
 -------------
 <pre>
