@@ -30,30 +30,6 @@ def sizeof_fmt(num):
         num /= 1024.0
     return "%3.1f %s" % (num, 'PB')
 
-def handle_snapshot_time(val):
-    pass
-
-def handle_read_bytes(val):
-    global output, new_row
-    print "\t Bytes Read: {0:>15}".format(sizeof_fmt(val))
-    
-def handle_write_bytes(val):
-    global output, new_row
-    print "\t Bytes Written: {0:>15}".format(sizeof_fmt(val))
-    
-def handle_ioctl(val):
-    global output, new_row
-    print "\t IOCTL: {0:>15}".format( int(val))
-    
-def handle_open(val):
-    global output, new_row
-    print "\t File Open: {0:>15}".format(int(val))
-    
-def handle_close(val):
-    global output, new_row
-    print "\t File Close: {0:>15}".format(int(val))
-
-
 def printJobMDCStats(JobMDCStats):
     global output, new_row
     
