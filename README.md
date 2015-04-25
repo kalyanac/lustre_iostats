@@ -5,6 +5,9 @@ _Job IO statistics on Lustre file systems for HPC Clusters_
 
 A quick and dirty utility to get raw job IO statistics on Lustre file systems. This utility is written in Python.
 
+*Known issue*
+On Lustre client 2.5.1, I noticed the read_bytes & write_bytes is now reporting samples + 4 values instead of 3 values. The script must be corrected to read the last but one column instead of last column.
+
 *How to use:*
 
 Refer to the sample job script on how to use this utility.
